@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite">
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter" />
+    </listeners>
+    <test name="Test">
+        <classes>
+            <class name="com.fiserv.testframework.tests.SearchEngineTest"/>
+        </classes>
+    </test>
+</suite>
