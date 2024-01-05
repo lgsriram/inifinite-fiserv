@@ -12,11 +12,11 @@ public class SearchResultsPage {
 
     public SearchResultsPage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, 10); // Adjust the wait time as needed
+        this.wait = new WebDriverWait(driver, 10);
     }
 
     private WebElement getSearchResultElement() {
-        By searchResultSelector = By.cssSelector("h3"); // Adjust the selector based on actual search engine results
+        By searchResultSelector = By.cssSelector("h3");
         return wait.until(ExpectedConditions.visibilityOfElementLocated(searchResultSelector));
     }
 
@@ -30,5 +30,4 @@ public class SearchResultsPage {
         firstResult.click();
     }
 
-    // Add more methods to interact with search results as needed
 }

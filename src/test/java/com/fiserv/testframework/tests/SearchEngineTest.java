@@ -27,7 +27,6 @@ public class SearchEngineTest {
         return new Object[][]{
                 {"Java Programming"},
                 {"Test Automation"},
-                // Add more search terms as needed
         };
     }
 
@@ -38,8 +37,6 @@ public class SearchEngineTest {
         // Navigate to the search engine
         driver.get("https://www.google.com");
 
-        // Perform a search
-        // ...
 
         // Get the first result from the search results page
         String actualResult = searchResultsPage.getFirstResultText();
